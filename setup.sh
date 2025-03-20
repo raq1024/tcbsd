@@ -29,3 +29,6 @@ fi
 
 #restart TwinCAT Router
 doas service TcSystemService restart
+
+mosquitto_pub -d -h 192.168.56.122 -p 1883 -t test -m "" | tee -a result
+cat result
