@@ -1,0 +1,1 @@
+echo "permit nopass Administrator as root" | doas tee -a /usr/local/etc/doas.conf
