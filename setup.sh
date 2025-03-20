@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#echo "permit nopass Administrator as root" | doas tee -a /usr/local/etc/doas.conf
+echo "permit nopass Administrator as root" | doas tee -a /usr/local/etc/doas.conf
 
 #check if the Routes directory already exists
 IP=192.168.56.102
