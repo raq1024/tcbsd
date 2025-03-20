@@ -2,6 +2,8 @@
 
 echo "permit nopass Administrator as root" | doas tee -a /usr/local/etc/doas.conf
 
+doas pkg install mosquitto
+
 #check if the Routes directory already exists
 IP=192.168.56.102
 DIR="/usr/local/etc/TwinCAT/3.1/Target/Routes"
@@ -18,8 +20,6 @@ else
         dev"
 
         read conf
-
-        param=$1
 
         echo "selected :"
         echo "mqtt-"${conf}".xml"
