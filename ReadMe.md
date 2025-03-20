@@ -34,6 +34,7 @@ the script asks user to select a configuration from :
 - prod
 - test
 - dev
+
 please type in your choice and confirm with `Enter`
 
 Devices will be able to talk only with other devices on the same Network
