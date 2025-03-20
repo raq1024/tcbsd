@@ -3,6 +3,7 @@
 #echo "permit nopass Administrator as root" | doas tee -a /usr/local/etc/doas.conf
 
 #check if the Routes directory already exists
+IP=192.168.56.102
 DIR="/usr/local/etc/TwinCAT/3.1/Target/Routes"
 if [ ! -d "$DIR" ]; then
         mkdir -p "$DIR"
@@ -32,5 +33,5 @@ doas service TcSystemService restart
 
 sleep 5
 
-mosquitto_pub -d -h 192.168.56.122 -p 1883 -t test -m "" | tee result
-cat result
+echo "testing MQTT broker connection..."
+mosquitto_pub -d -h ${IP} -p 1883 -t test -m ""
