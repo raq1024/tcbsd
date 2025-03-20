@@ -2,7 +2,8 @@
 
 echo "permit nopass Administrator as root" | doas tee -a /usr/local/etc/doas.conf
 
-doas pkg install mosquitto
+doas pkg update && doas pkg upgrade
+doas pkg install -y mosquitto
 
 #check if the Routes directory already exists
 IP=192.168.56.102
