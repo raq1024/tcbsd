@@ -4,7 +4,7 @@
 
 - install git
 ```
-    doas pkg install git
+doas pkg install git
 ```
 
 - clone repository

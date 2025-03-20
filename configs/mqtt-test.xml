@@ -6,5 +6,7 @@ xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2015/12/TcConfig"
     <Address Port="1883">192.168.56.102</Address>
     <Topic>test</Topic>
     </Mqtt>
+    <User>user</User>
+    <Pwd>pass</Pwd>
   </RemoteConnections>
 </TcConfig>
