@@ -23,8 +23,8 @@ else
         echo "selected :"
         echo "mqtt-"${conf}".xml"
 
-        rm "$DIR"/*
-        cp configs/mqtt-${conf}.xml "$DIR"/
+        doas rm "$DIR"/*
+        doas cp configs/mqtt-${conf}.xml "$DIR"/
 fi
 
 #restart TwinCAT Router
