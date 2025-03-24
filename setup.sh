@@ -35,4 +35,4 @@ doas service TcSystemService restart
 sleep 5
 
 echo "testing MQTT broker connection..."
-mosquitto_pub -d -h ${IP} -p 1883 -t test -m ""
+mosquitto_pub -d -h ${IP} -p 1883 -u "user" -P "pass" -t test -m ""
