@@ -16,7 +16,7 @@ if [ ! -d "$DIR" ]; then
         echo "lobby"
 else
         echo "select configuration :
-        prod
+        lobby
         test
         dev"
 
